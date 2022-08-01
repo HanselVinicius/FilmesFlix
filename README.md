@@ -18,6 +18,18 @@ Este projeto consiste em exibir uma lista de filmes, oriundas de uma API.
   <img src="/filmes_flix.png" width="300" />
 </p>
 
-**Desafios para os alunos:**
+Uma Clean Architecture consiste em:
 
-Como devem ter observado, os filmes possuem mais informações que deixariam o app ainda melhor. Que tal criarem uma tela de detalhes de cada filme com as informações vindas da requisição? 
+* View - tudo que é referente a componentes visuais e a logica deles
+
+
+* Domain - Modelos e regras de negócio
+
+
+* Data - Abstração para acessar o datasource
+
+* Usecases - Transmite as ações do usuário
+
+* app - irá conter as implementações das interfaces da camada de dados
+
+
