@@ -20,16 +20,16 @@ Este projeto consiste em exibir uma lista de filmes, oriundas de uma API.
 
 Uma Clean Architecture consiste em:
 
-* View - tudo que é referente a componentes visuais e a logica deles
+* [App - irá conter as implementações das interfaces da camada de dados](https://github.com/HanselVinicius/FilmesFlix/tree/main/app)
 
+* [View - tudo que é referente a componentes visuais e a logica deles](https://github.com/HanselVinicius/FilmesFlix/tree/main/app/src/main/java/com/br/natanfc/filmesflix/View)
 
-* Domain - Modelos e regras de negócio
+* [Domain - Modelos e regras de negócio](https://github.com/HanselVinicius/FilmesFlix/tree/main/app/src/main/java/com/br/natanfc/filmesflix/domain)
 
+* [Data - Abstração para acessar o datasource](https://github.com/HanselVinicius/FilmesFlix/tree/main/app/src/main/java/com/br/natanfc/filmesflix/data)
 
-* Data - Abstração para acessar o datasource
+* [Usecases - Transmite as ações do usuário](https://github.com/HanselVinicius/FilmesFlix/tree/main/app/src/main/java/com/br/natanfc/filmesflix/usecase)
 
-* Usecases - Transmite as ações do usuário
+* [Framework/Api - contém nosso ViewModel que é a logica inerente a regra de negocio e contém nossas porta de acesso a DataSource que no caso é uma API REST](https://github.com/HanselVinicius/FilmesFlix/tree/main/app/src/main/java/com/br/natanfc/filmesflix/framework/api)
 
-* app - irá conter as implementações das interfaces da camada de dados
-
-
+Clean Architecture são usadas para tornar o software mais robusto, flexível e escalável e evitar futuros colapsos facilitando mudanças, evoluções e manutenções
